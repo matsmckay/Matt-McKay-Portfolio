@@ -1,0 +1,8 @@
+@use "./variables";
+
+h1 {
+    color: green;
+    background: variables.$secondary;
+}
+
+;
