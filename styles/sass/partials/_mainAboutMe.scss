@@ -1,0 +1,22 @@
+@use "./variables";
+
+.aboutMe {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.profilePic {
+    padding-right: 10px;
+}
+
+.profileText {
+    padding-left: 10px;
+}
+
+.aboutMeBg {
+    background: variables.$isabelline;
+    padding: 100px 0;
+    color: variables.$smokeyBlack;
+}

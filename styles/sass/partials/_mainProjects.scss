@@ -1,0 +1,70 @@
+@use "./variables";
+
+
+.projects {
+    margin: 0 auto;
+}
+
+.projectOne {
+
+    display: flex;
+}
+
+.projectTwo {
+    display: flex;
+}
+
+.projectThree {
+    display: flex;
+}
+
+.projectOneImage {
+    width: 43%;
+    padding: 10px 0;
+}
+
+.projectTwoImage {
+    width: 57%;
+    padding-bottom: 10px;
+}
+
+.projectThreeImage {
+    width: 57%;
+    padding-top: 10px;
+}
+
+
+.projectOneImage img {
+    justify-content: end;
+    display: flex;
+    width: 90%;
+}
+
+.projectTwoImage img {
+    justify-content: end;
+    display: flex;
+    width: 90.5%;
+}
+
+.projectThreeImage img {
+    justify-content: end;
+    display: flex;
+    width: 90.5%;
+}
+
+
+.projectOneInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectTwoInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectThreeInfo {
+    display: flex;
+    flex-direction: column;
+}

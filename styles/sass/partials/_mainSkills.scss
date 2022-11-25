@@ -1,0 +1,28 @@
+@use "./variables";
+
+.skillsBg {
+    background: variables.$primary;
+    padding-top: 25px
+}
+
+.skills {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.skills li {
+    color: variables.$smokeyBlack;
+    list-style: none;
+}
+
+.skills ul li::before {
+    content: "\2022";
+    // Add content: \2022 is the CSS Code/unicode for a bullet
+    color: variables.$tertiary;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+}
