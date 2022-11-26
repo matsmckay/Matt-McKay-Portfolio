@@ -1,8 +1,12 @@
 @use "./variables";
 
+h2 {
+    margin: 0 auto;
+}
 
 .projects {
     margin: 0 auto;
+    background-color: variables.$quartenary;
 }
 
 .projectOne {
@@ -37,7 +41,7 @@
 .projectOneImage img {
     justify-content: end;
     display: flex;
-    width: 90%;
+    width: 96%;
 }
 
 .projectTwoImage img {

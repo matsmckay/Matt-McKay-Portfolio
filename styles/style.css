@@ -273,8 +273,9 @@ h1 {
 
 .navWrapper {
   max-width: 1260px;
-  margin: 25px 0;
-  width: 95%;
+  padding: 25px 25px 25px;
+  width: 100%;
+  background-color: #D96C06;
 }
 
 nav ul {
@@ -324,7 +325,7 @@ li {
 }
 
 .aboutMeBg {
-  background: #F5EFED;
+  background: #BDBF09;
   padding: 100px 0;
   color: #0F0A0A;
 }
@@ -358,8 +359,13 @@ li {
   margin-left: -1em;
 }
 
+h2 {
+  margin: 0 auto;
+}
+
 .projects {
   margin: 0 auto;
+  background-color: #E7E8EE;
 }
 
 .projectOne {
@@ -402,7 +408,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 96%;
 }
 
 .projectTwoImage img {
@@ -456,8 +462,76 @@ li {
           flex-direction: column;
 }
 
+.getInTouch {
+  background-color: #D96C06;
+}
+
+.contactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials {
+  width: 33.3333333333%;
+}
+
+.contactSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+.contactSocialMedia li {
+  padding-right: 5px;
+  list-style: none;
+}
+
+.gitForm {
+  width: 66.6666666667%;
+  width: 100%;
+  margin: 0 auto;
+}
+.gitForm .formBtn {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gitForm textArea {
+  width: 100%;
+}
+.gitForm .formInputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.gitForm .formInputFlex .inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.gitForm .formInputFlex .inputFlex label {
+  padding-left: 20px;
+}
+
+.contactSocialMedia a {
+  color: #2292A4;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 80%;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #2292A4;
+  text-align: center;
 }

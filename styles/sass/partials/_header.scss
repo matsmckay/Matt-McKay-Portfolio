@@ -15,9 +15,9 @@ h1 {
 
 .navWrapper {
     max-width: 1260px;
-    margin: 25px 0;
-    width: 95%;
-
+    padding: 25px 25px 25px;
+    width: 100%;
+    background-color: variables.$tertiary;
 }
 
 nav ul {

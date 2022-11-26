@@ -1,0 +1,67 @@
+@use "./variables";
+
+
+.getInTouch {
+    background-color: variables.$tertiary;
+}
+
+.contactUs {
+    display: flex;
+}
+
+
+.socials {
+    width: calc(100% / 3);
+}
+
+
+.contactSocialMedia {
+    display: flex;
+    padding-bottom: 15px;
+
+    li {
+        padding-right: 5px;
+        list-style: none;
+
+    }
+}
+
+.gitForm {
+    width: calc(100% * (2 / 3));
+    // FORM STYLES
+
+
+    width: 100%;
+    margin: 0 auto;
+
+    .formBtn {
+        display: block;
+        align-items: center;
+    }
+
+    textArea {
+        width: 100%;
+    }
+
+    .formInputFlex {
+        display: flex;
+        margin-bottom: 20px;
+
+        .inputFlex {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label {
+                padding-left: 20px;
+
+            }
+        }
+    }
+
+}
+
+.contactSocialMedia a {
+    color: variables.$primary;
+
+}
