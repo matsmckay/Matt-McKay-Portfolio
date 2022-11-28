@@ -261,6 +261,74 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
+h1 {
+  font-family: "IM Fell English", serif;
+  font-size: clamp(0.9rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "IM Fell English", serif;
+  font-size: clamp(0.8rem, 3vw, 2.25rem);
+  text-transform: uppercase;
+  color: #BDBF09;
+}
+
+h3 {
+  font-family: "IM Fell English", serif;
+  font-size: clamp(0.8rem, 3vw, 2rem);
+  text-transform: uppercase;
+  color: #D96C06;
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  font-family: "IM Fell English", serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #2292A4;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 h1 {
   color: #0F0A0A;
   text-align: center;
@@ -322,6 +390,10 @@ li {
           align-items: center;
 }
 
+.aboutMe h2 {
+  color: #0F0A0A;
+}
+
 .profilePic {
   padding-right: 10px;
   display: -webkit-box;
@@ -333,7 +405,7 @@ li {
 }
 
 .profilePic img {
-  width: 35%;
+  width: 75%;
 }
 
 .profileText {
@@ -353,6 +425,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .skills li {
@@ -374,14 +449,14 @@ li {
   margin-left: -1em;
 }
 
-h2 {
-  margin: 0 auto;
-}
-
 .projects {
   margin: 0 auto;
   background-color: #E7E8EE;
   padding: 50px 0;
+}
+
+.projects h2 {
+  color: #0F0A0A;
 }
 
 .projectOne {
@@ -402,19 +477,61 @@ h2 {
   display: flex;
 }
 
+.projectOneInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.projectTwoInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.projectThreeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
 .projectOneImage {
   width: 57%;
-  padding: 10px 0;
+  padding-bottom: 20px;
 }
 
 .projectTwoImage {
   width: 57%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .projectThreeImage {
   width: 57%;
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .projectOneImage img {
@@ -445,36 +562,6 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   width: 90.5%;
-}
-
-.projectOneInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.projectTwoInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.projectThreeInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .getInTouch {
@@ -539,12 +626,6 @@ h2 {
 
 .contactSocialMedia a {
   color: #2292A4;
-}
-
-.wrapper {
-  max-width: 1260px;
-  width: 80%;
-  margin: 0 auto;
 }
 
 footer {

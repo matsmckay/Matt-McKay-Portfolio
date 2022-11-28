@@ -10,7 +10,10 @@
     display: flex;
     margin: 0 auto;
     align-items: center;
+}
 
+.aboutMe h2 {
+    color: variables.$smokeyBlack
 }
 
 .profilePic {
@@ -20,7 +23,7 @@
 }
 
 .profilePic img {
-    width: 35%;
+    width: 75%;
 }
 
 .profileText {
