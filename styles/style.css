@@ -268,7 +268,7 @@ h1 {
 
 .headerHome {
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .navWrapper {
@@ -306,6 +306,12 @@ li {
   margin-left: 25px;
 }
 
+.aboutMeBg {
+  background: #BDBF09;
+  padding: 50px 0;
+  color: #0F0A0A;
+}
+
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,21 +324,25 @@ li {
 
 .profilePic {
   padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.profilePic img {
+  width: 35%;
 }
 
 .profileText {
   padding-left: 10px;
 }
 
-.aboutMeBg {
-  background: #BDBF09;
-  padding: 100px 0;
-  color: #0F0A0A;
-}
-
 .skillsBg {
   background: #2292A4;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .skills {
@@ -348,6 +358,11 @@ li {
 .skills li {
   color: #0F0A0A;
   list-style: none;
+  padding: 5px 0px;
+}
+
+.skillsBlurb {
+  width: 20%;
 }
 
 .skills ul li::before {
@@ -366,6 +381,7 @@ h2 {
 .projects {
   margin: 0 auto;
   background-color: #E7E8EE;
+  padding: 50px 0;
 }
 
 .projectOne {
@@ -387,7 +403,7 @@ h2 {
 }
 
 .projectOneImage {
-  width: 43%;
+  width: 57%;
   padding: 10px 0;
 }
 
@@ -408,7 +424,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 96%;
+  width: 90.5%;
 }
 
 .projectTwoImage img {
@@ -432,7 +448,6 @@ h2 {
 }
 
 .projectOneInfo {
-  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,6 +479,7 @@ h2 {
 
 .getInTouch {
   background-color: #D96C06;
+  padding: 50px 0;
 }
 
 .contactUs {
