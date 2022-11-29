@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -402,7 +401,8 @@ nav a {
 }
 
 .profilePic img {
-  width: 75%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .skillsBg {
@@ -410,47 +410,36 @@ nav a {
   padding: 25px;
 }
 
-.skills {
+.skillsBg ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.skills li {
-  color: #0F0A0A;
-  list-style: none;
-  padding: 5px 0px;
+.skillsBg li {
+  width: 25%;
 }
 
-.skillsBlurb {
-  width: 20%;
+.skillsBg p {
+  text-align: center;
 }
 
-.skills ul li::before {
-  content: "•";
-  color: #D96C06;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+.skillsBlurb p {
+  text-align: left;
 }
 
-.projects {
+.projectsSection {
   margin: 0 auto;
   background-color: #E7E8EE;
   padding: 50px 0;
 }
 
-.projects h2 {
+.projectsSection h2 {
   color: #0F0A0A;
 }
 
@@ -515,17 +504,17 @@ nav a {
 }
 
 .projectOneImage {
-  width: 57%;
+  width: 50%;
   padding-bottom: 20px;
 }
 
 .projectTwoImage {
-  width: 57%;
+  width: 50%;
   padding-bottom: 20px;
 }
 
 .projectThreeImage {
-  width: 57%;
+  width: 50%;
   padding-bottom: 20px;
 }
 
@@ -585,6 +574,13 @@ nav a {
   list-style: none;
 }
 
+.formBlog {
+  height: 200px;
+  padding-top: 30px;
+  padding-left: 20px;
+  background: #EAFEFC;
+}
+
 .gitForm {
   width: 66.6666666667%;
   width: 100%;
@@ -603,7 +599,11 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3px 0;
 }
 .gitForm .formInputFlex .inputFlex {
   display: -webkit-box;
@@ -615,12 +615,10 @@ nav a {
           flex-direction: column;
   width: 100%;
 }
-.gitForm .formInputFlex .inputFlex label {
-  padding-left: 20px;
-}
 
 .contactSocialMedia a {
   color: #2292A4;
+  padding-right: 20px;
 }
 
 footer {
@@ -635,11 +633,93 @@ footer {
   .profilePic {
     padding-right: 25px;
   }
-  .skills li {
-    padding: 5px 25px;
+  .skills .skillsBlurb {
+    width: 100%;
+  }
+  .skills .skillsBlurb h2 {
+    text-align: center;
+  }
+  .skills .rowSkill {
+    width: 33.3333333333%;
   }
   .skills p {
     padding-right: 25px;
-    padding-top: 25px;
+    text-align: center;
+  }
+  .projectsSection h2 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 825px) {
+  .aboutMe {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profilePic {
+    width: 50%;
+    padding-bottom: 25px;
+  }
+  .profileText {
+    width: 100%;
+    text-align: center;
+  }
+  .skills .rowSkill {
+    width: 100%;
+  }
+  .projects ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects li {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactUs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .contactSocialMedia {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 450px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav li {
+    padding-bottom: 15px;
+  }
+  .profilePic {
+    width: 100%;
   }
 }

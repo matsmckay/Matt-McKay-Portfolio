@@ -5,36 +5,31 @@
     padding: 25px
 }
 
-.skills {
+.skillsBg ul {
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-// .skills ul {
-//     display: flex;
-//     flex-wrap: wrap;
+.skillsBg li {
+    width: 25%;
+}
+
+.skillsBg p {
+    text-align: center;
+}
+
+.skillsBlurb p {
+    text-align: left;
+}
+
+// .skills li p::before {
+//     content: "\2022";
+//     // Add content: \2022 is the CSS Code/unicode for a bullet
+//     color: variables.$tertiary;
+//     font-weight: bold;
+//     display: inline-block;
+//     width: 1em;
+//     margin-left: -1em;
+
 // }
-
-.skills li {
-    color: variables.$smokeyBlack;
-    list-style: none;
-    padding: 5px 0px;
-}
-
-.skillsBlurb {
-    width: 20%;
-}
-
-.skills ul li::before {
-    content: "\2022";
-    // Add content: \2022 is the CSS Code/unicode for a bullet
-    color: variables.$tertiary;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-
-}

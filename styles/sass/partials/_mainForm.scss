@@ -28,11 +28,15 @@
     }
 }
 
+.formBlog {
+    height: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background: #EAFEFC;
+}
+
 .gitForm {
     width: calc(100% * (2 / 3));
-    // FORM STYLES
-
-
     width: 100%;
     margin: 0 auto;
 
@@ -47,17 +51,13 @@
 
     .formInputFlex {
         display: flex;
-        margin-bottom: 20px;
+        flex-direction: column;
+        padding: 3px 0;
 
         .inputFlex {
             display: flex;
             flex-direction: column;
             width: 100%;
-
-            label {
-                padding-left: 20px;
-
-            }
         }
     }
 
@@ -65,5 +65,5 @@
 
 .contactSocialMedia a {
     color: variables.$primary;
-
+    padding-right: 20px;
 }

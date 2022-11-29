@@ -9,16 +9,94 @@
         padding-right: 25px;
     }
 
-    // .skillsBg h2 {
-    //     text-align: center;
-    // }
+    .skills .skillsBlurb {
+        width: 100%;
 
-    .skills li {
-        padding: 5px 25px;
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .skills .rowSkill {
+        width: calc(100% / 3);
     }
 
     .skills p {
         padding-right: 25px;
-        padding-top: 25px;
+        text-align: center;
+        // padding-top: 25px;
+    }
+
+    .projectsSection h2 {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 825px) {
+
+    .aboutMe {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profilePic {
+        width: 50%;
+        padding-bottom: 25px;
+
+    }
+
+    .profileText {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .skills .rowSkill {
+        width: 100%;
+    }
+
+    .projects ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects li {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contactUs {
+        flex-wrap: wrap;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactSocialMedia {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 450px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav li {
+        padding-bottom: 15px;
+
+    }
+
+    .profilePic {
+        width: 100%;
     }
 }

@@ -1,12 +1,12 @@
 @use "./variables";
 
-.projects {
+.projectsSection {
     margin: 0 auto;
     background-color: variables.$quartenary;
     padding: 50px 0;
 }
 
-.projects h2 {
+.projectsSection h2 {
     color: variables.$smokeyBlack
 }
 
@@ -44,17 +44,17 @@
 }
 
 .projectOneImage {
-    width: 57%;
+    width: 50%;
     padding-bottom: 20px;
 }
 
 .projectTwoImage {
-    width: 57%;
+    width: 50%;
     padding-bottom: 20px;
 }
 
 .projectThreeImage {
-    width: 57%;
+    width: 50%;
     padding-bottom: 20px;
 }
 
