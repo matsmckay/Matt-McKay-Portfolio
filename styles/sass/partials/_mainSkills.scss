@@ -5,6 +5,11 @@
     padding: 25px
 }
 
+.skillsBg h2 {
+    color: variables.$smokeyBlack;
+    text-align: center;
+}
+
 .skillsBg ul {
     display: flex;
     flex-wrap: wrap;
@@ -17,19 +22,26 @@
 
 .skillsBg p {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .skillsBlurb p {
     text-align: left;
 }
 
-// .skills li p::before {
-//     content: "\2022";
-//     // Add content: \2022 is the CSS Code/unicode for a bullet
-//     color: variables.$tertiary;
-//     font-weight: bold;
-//     display: inline-block;
-//     width: 1em;
-//     margin-left: -1em;
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-// }
+    & i:hover {
+        transform: scale(1.1);
+        color: variables.$quartenary;
+    }
+
+    & i:focus {
+        transform: scale(1.1);
+    }
+
+
+}

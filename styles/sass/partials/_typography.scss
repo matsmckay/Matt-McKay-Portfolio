@@ -6,7 +6,6 @@ html {
 
 h1 {
     font-family: 'IM Fell English', serif;
-
     font-size: clamp(1.5rem, 6vw, 3.5rem);
     text-transform: uppercase;
 }
@@ -27,17 +26,16 @@ h3 {
     letter-spacing: 1.3px;
 }
 
-// h4 {
-//     font-family: 'IM Fell English', serif;
-//     font-size: 1.25rem;
-//     text-transform: uppercase;
-//     color: variables.$primary;
-// }
+i {
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    color: variables.$secondary;
+}
 
 p {
     font-family: 'Roboto', sans-serif;
     font-size: clamp(0.8rem, 0.9rem, 1.0rem);
-    line-height: 28px;
     letter-spacing: 1px;
 
 }

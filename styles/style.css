@@ -285,10 +285,16 @@ h3 {
   letter-spacing: 1.3px;
 }
 
+i {
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  color: #BDBF09;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
-  line-height: 28px;
   letter-spacing: 1px;
 }
 
@@ -410,6 +416,11 @@ nav a {
   padding: 25px;
 }
 
+.skillsBg h2 {
+  color: #0F0A0A;
+  text-align: center;
+}
+
 .skillsBg ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,10 +438,33 @@ nav a {
 
 .skillsBg p {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .skillsBlurb p {
   text-align: left;
+}
+
+.skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-title i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #E7E8EE;
+}
+.skills-title i:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projectsSection {
@@ -643,7 +677,6 @@ footer {
     width: 33.3333333333%;
   }
   .skills p {
-    padding-right: 25px;
     text-align: center;
   }
   .projectsSection h2 {
@@ -704,6 +737,16 @@ footer {
   .contactSocialMedia {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+@media (max-width: 700px) {
+  .skillsBg li {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 500px) {
+  .skillsBg li {
+    width: 50%;
   }
 }
 @media (max-width: 450px) {

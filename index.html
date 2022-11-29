@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt McKay Portfolio</title>
     <script src="https://kit.fontawesome.com/ed617cac6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <link rel="stylesheet" href="./styles/style.css" </head>
 
 <body>
@@ -16,6 +18,7 @@
                 <ul>
                     <li><a href="#home" class="navLink">home</a></li>
                     <li><a href="#about" class="navLink">about</a></li>
+                    <li><a href="#skills" class="navLink">skills</a></li>
                     <li><a href="#projects" class="navLink">projects</a></li>
                     <li><a href="#getInTouch" class="navLink">get in touch</a></li>
                 </ul>
@@ -28,13 +31,13 @@
                 </div>
             </div>
         </div>
-        <div class="headerHome">
+        <div id="home" class="headerHome">
             <h1>matthew mckay</h1>
             <p>toronto based web developer</p>
         </div>
     </header>
     <main>
-        <div class="aboutMeBg">
+        <div id="about" class="aboutMeBg">
             <section class="aboutMe wrapper">
                 <div class="profilePic">
                     <img src="./assets/MattMcKayProfilePhoto2022.jpeg" alt="profile photos of me">
@@ -52,34 +55,65 @@
                 </div>
             </section>
         </div>
-        <section class="skillsBg">
-            <ul class="skills wrapper">
-                <li class="skillsBlurb">
-                    <h2>skills</h2>
-                    <p>My knowledge in programming and web technologies include:
-                    </p>
-                </li>
-                <li class="rowSkill skillRowOne">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Sass</p>
-                    <p>JavaScript</p>
-                </li>
-                <li class="rowSkill skillRowTwo">
-                    <p>React</p>
-                    <p>Firebase</p>
-                    <p>Git and GitHub</p>
-                    <p>Netlify</p>
-                </li>
-                <li class="rowSkill skillRowThree">
-                    <p>Using REST APIs with AJAX</p>
-                    <p>Web accessibility</p>
-                    <p>Paired Programming</p>
-                    <p>Project Management</p>
-                </li>
-            </ul>
+        <section id="skills" class="skillsBg">
+            <div class="wrapper">
+                <h2>skills</h2>
+                <p>My knowledge in programming and web technologies include:
+                </p>
+                <ul class="skills">
+                    <li class="skills-title">
+                        <i class="devicon-html5-plain-wordmark" aria-hidden="true" title="HTML5"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-css3-plain" aria-hidden="true" title="HTML5"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-sass-original" aria-hidden="true" title="HTML5"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-javascript-plain" aria-hidden="true" title="HTML5"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-react-original" aria-hidden="true" title="HTML5"></i>
+                        <p>React</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-firebase-plain" aria-hidden="true" title="HTML5"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-git-plain" aria-hidden="true" title="HTML5"></i>
+                        <p>Git</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="devicon-github-original" aria-hidden="true" title="HTML5"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fa-solid fa-terminal" aria-hidden="true" title="HTML5"></i>
+                        <p>Terminal</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fa-solid fa-arrows-turn-to-dots" aria-hidden="true" title="HTML5"></i>
+                        <p>Rest APIs</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fa-solid fa-person-through-window" aria-hidden="true" title="HTML5"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li class="skills-title">
+                        <i class="fa-solid fa-person-through-window" aria-hidden="true" title="HTML5"></i>
+                        <p>Responsive Design</p>
+                    </li>
+
+                </ul>
+            </div>
         </section>
-        <section class="projectsSection">
+        <section id="projects" class="projectsSection">
             <div class="projects wrapper">
                 <h2>projects</h2>
                 <ul class="projectTwo">
@@ -134,7 +168,7 @@
             </div>
             <!-- END .projects .wrapper -->
         </section>
-        <section class="getInTouch">
+        <section id="getInTouch" class="getInTouch">
             <div class="contactUs wrapper">
                 <div class="socials">
                     <h2>get in touch</h2>
