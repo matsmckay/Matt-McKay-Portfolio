@@ -35,6 +35,15 @@
 
 @media (max-width: 825px) {
 
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    .headerHamburger {
+        align-self: center;
+    }
+
+
     .aboutMe {
         flex-wrap: wrap;
         justify-content: center;
@@ -43,6 +52,7 @@
     .profilePic {
         width: 50%;
         padding-bottom: 25px;
+        padding-right: 0;
 
     }
 
@@ -86,6 +96,80 @@
 @media (max-width: 700px) {
     .skillsBg li {
         width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 600px) {
+    .navWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .navBar {
+            padding-top: 0;
+            align-items: center;
+            width: 100%;
+
+            .navFlex {
+                display: flex;
+                list-style: none;
+                padding: 10px 0;
+                margin-top: 10px;
+                justify-content: space-around;
+                position: fixed;
+                right: -100%;
+                top: 47px;
+                background: variables.$primary;
+                width: 100%;
+                transition: 0.3s;
+                opacity: 0.9;
+                z-index: 20;
+            }
+
+            .navFlex.active {
+                right: 0;
+            }
+
+        }
+    }
+
+    .headerHamburger {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: variables.$tertiary;
+        padding: 0 20px;
+        min-height: 50px;
+        opacity: 0.9;
+
+        .hamburger {
+            display: block;
+            align-items: center;
+
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.2s ease-in-out;
+        background-color: variables.$primary;
+
     }
 }
 

@@ -14,8 +14,8 @@
 <body>
     <header>
         <div class="navWrapper">
-            <nav class="navWrapper">
-                <ul>
+            <nav class="navBar">
+                <ul class="navFlex">
                     <li><a href="#home" class="navLink">home</a></li>
                     <li><a href="#about" class="navLink">about</a></li>
                     <li><a href="#skills" class="navLink">skills</a></li>
@@ -124,10 +124,10 @@
                     <li class="projectTwoInfo">
                         <h3>Horoscopes 4 U!</h3>
                         <p>HTML, CSS, JAVASCRIPT, API</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div>
-                            <button>view live</button>
-                            <button>view code</button>
+                        <p>Come for your zodiac sign fortune, stay for the bonus options!</p>
+                        <div class="proBtn">
+                            <button class="btn">view live</button>
+                            <button class="btn">view code</button>
                         </div>
                     </li>
                 </ul>
@@ -141,10 +141,10 @@
                             Boat Ride Adventures
                         </h3>
                         <p>HTML, CSS, JAVASCRIPT</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div>
-                            <button>view live</button>
-                            <button>view code</button>
+                        <p>A fake cruise site so nice, you might be tempted to go!</p>
+                        <div class="proBtn">
+                            <button class="btn">view live</button>
+                            <button class="btn">view code</button>
                         </div>
                     </li>
                 </ul>
@@ -158,10 +158,10 @@
                             galass handbags
                         </h3>
                         <p>HTML, CSS</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <div>
-                            <button>view live</button>
-                            <button>view code</button>
+                        <p>Website of the finest vegan leather handbags ever created!</p>
+                        <div class="proBtn">
+                            <button class="btn">view live</button>
+                            <button class="btn">view code</button>
                         </div>
                     </li>
                 </ul>
@@ -172,8 +172,10 @@
             <div class="contactUs wrapper">
                 <div class="socials">
                     <h2>get in touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, corrupti accusamus quod
-                        reprehenderit fugit doloribus molestias expedita mollitia, libero nostrum nam, </p>
+                    <p>If you have any questions about me or my projects, or want to have a (civilized) discussion on
+                        why my favourite sports team are better than yours, I am game!</p>
+                    <p>I'm always around Toronto to grab a coffee and discuss my future! Drop any questions, concerns,
+                        comments and thanks for taking time to drop by!</p>
                     <div class="socialIcons">
                         <ul class="contactSocialMedia">
                             <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -207,12 +209,24 @@
 
                         </div>
                         <!-- END .formComments -->
-                        <button class="formBtn" type="postComment">Post Comment</button>
+                        <button class="btn" type="postComment">Post Comment</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navFlex = document.querySelector(".navFlex");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navFlex.classList.toggle("active");
+        });
+        document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navFlex.classList.remove("active");
+        }))
+    </script>
 </body>
 <footer>
     Built in 2022 by Matt McKay

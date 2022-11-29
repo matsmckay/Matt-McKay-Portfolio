@@ -5,3 +5,13 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.btn {
+    display: block;
+    align-items: center;
+    background-color: variables.$secondary;
+    border-radius: 3px;
+    padding: 8px 30px;
+    margin-top: 10px;
+    color: variables.$primary;
+}

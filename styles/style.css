@@ -316,6 +316,10 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -325,6 +329,18 @@ img {
   max-width: 1260px;
   width: 80%;
   margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #BDBF09;
+  border-radius: 3px;
+  padding: 8px 30px;
+  margin-top: 10px;
+  color: #2292A4;
 }
 
 h1 {
@@ -338,7 +354,6 @@ h1 {
 }
 
 .navWrapper {
-  max-width: 1260px;
   padding: 25px 25px 25px;
   width: 100%;
   background-color: #D96C06;
@@ -465,6 +480,22 @@ nav a {
 .skills-title i:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.proBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.proBtn .btn {
+  background-color: #D96C06;
+  color: #BDBF09;
+  margin: 0 5px;
 }
 
 .projectsSection {
@@ -620,12 +651,6 @@ nav a {
   width: 100%;
   margin: 0 auto;
 }
-.gitForm .formBtn {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .gitForm textArea {
   width: 100%;
 }
@@ -685,6 +710,15 @@ footer {
   }
 }
 @media (max-width: 825px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .headerHamburger {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
   .aboutMe {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -695,6 +729,7 @@ footer {
   .profilePic {
     width: 50%;
     padding-bottom: 25px;
+    padding-right: 0;
   }
   .profileText {
     width: 100%;
@@ -742,6 +777,88 @@ footer {
 @media (max-width: 700px) {
   .skillsBg li {
     width: 33.3333333333%;
+  }
+}
+@media (max-width: 600px) {
+  .navWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navWrapper .navBar {
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .navWrapper .navBar .navFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    right: -100%;
+    top: 47px;
+    background: #2292A4;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.9;
+    z-index: 20;
+  }
+  .navWrapper .navBar .navFlex.active {
+    right: 0;
+  }
+  .headerHamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #D96C06;
+    padding: 0 20px;
+    min-height: 50px;
+    opacity: 0.9;
+  }
+  .headerHamburger .hamburger {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: #2292A4;
   }
 }
 @media (max-width: 500px) {
