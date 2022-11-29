@@ -6,14 +6,14 @@ html {
 
 h1 {
     font-family: 'IM Fell English', serif;
-    // font-size: 3.95rem;
-    font-size: clamp(0.9rem, 6vw, 4.5rem);
+
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'IM Fell English', serif;
-    font-size: clamp(0.8rem, 3vw, 2.25rem);
+    font-size: clamp(1.2rem, 3vw, 2.25rem);
     text-transform: uppercase;
     color: variables.$secondary;
 
@@ -21,22 +21,22 @@ h2 {
 
 h3 {
     font-family: 'IM Fell English', serif;
-    font-size: clamp(0.8rem, 3vw, 2.0rem);
+    font-size: clamp(1.0rem, 3vw, 2.0rem);
     text-transform: uppercase;
     color: variables.$tertiary;
     letter-spacing: 1.3px;
 }
 
-h4 {
-    font-family: 'IM Fell English', serif;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    color: variables.$primary;
-}
+// h4 {
+//     font-family: 'IM Fell English', serif;
+//     font-size: 1.25rem;
+//     text-transform: uppercase;
+//     color: variables.$primary;
+// }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.9rem, 1.0rem);
     line-height: 28px;
     letter-spacing: 1px;
 

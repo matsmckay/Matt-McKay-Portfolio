@@ -1,3 +1,24 @@
 @use "./variables";
 
-@media (max-width: 861px) {}
+@media (max-width: 975px) {
+    .profileText {
+        padding-left: 25px;
+    }
+
+    .profilePic {
+        padding-right: 25px;
+    }
+
+    // .skillsBg h2 {
+    //     text-align: center;
+    // }
+
+    .skills li {
+        padding: 5px 25px;
+    }
+
+    .skills p {
+        padding-right: 25px;
+        padding-top: 25px;
+    }
+}

@@ -267,35 +267,28 @@ html {
 
 h1 {
   font-family: "IM Fell English", serif;
-  font-size: clamp(0.9rem, 6vw, 4.5rem);
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
   text-transform: uppercase;
 }
 
 h2 {
   font-family: "IM Fell English", serif;
-  font-size: clamp(0.8rem, 3vw, 2.25rem);
+  font-size: clamp(1.2rem, 3vw, 2.25rem);
   text-transform: uppercase;
   color: #BDBF09;
 }
 
 h3 {
   font-family: "IM Fell English", serif;
-  font-size: clamp(0.8rem, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   text-transform: uppercase;
   color: #D96C06;
   letter-spacing: 1.3px;
 }
 
-h4 {
-  font-family: "IM Fell English", serif;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  color: #2292A4;
-}
-
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 28px;
   letter-spacing: 1px;
 }
@@ -370,7 +363,7 @@ nav a {
   color: #0F0A0A;
 }
 
-li {
+.navWrapper li {
   margin-left: 25px;
 }
 
@@ -394,8 +387,12 @@ li {
   color: #0F0A0A;
 }
 
+.profileText {
+  padding-left: 30px;
+}
+
 .profilePic {
-  padding-right: 10px;
+  padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,10 +403,6 @@ li {
 
 .profilePic img {
   width: 75%;
-}
-
-.profileText {
-  padding-left: 10px;
 }
 
 .skillsBg {
@@ -428,6 +421,8 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills li {
@@ -631,4 +626,20 @@ li {
 footer {
   background-color: #2292A4;
   text-align: center;
+}
+
+@media (max-width: 975px) {
+  .profileText {
+    padding-left: 25px;
+  }
+  .profilePic {
+    padding-right: 25px;
+  }
+  .skills li {
+    padding: 5px 25px;
+  }
+  .skills p {
+    padding-right: 25px;
+    padding-top: 25px;
+  }
 }

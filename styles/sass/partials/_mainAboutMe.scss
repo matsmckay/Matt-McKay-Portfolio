@@ -16,16 +16,16 @@
     color: variables.$smokeyBlack
 }
 
+.profileText {
+    padding-left: 30px;
+}
+
 .profilePic {
-    padding-right: 10px;
+    padding-right: 30px;
     display: flex;
     justify-content: end;
 }
 
 .profilePic img {
     width: 75%;
-}
-
-.profileText {
-    padding-left: 10px;
 }
