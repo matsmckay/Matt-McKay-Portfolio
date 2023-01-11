@@ -331,6 +331,15 @@ img {
   margin: 0 auto;
 }
 
+.proBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn {
   display: block;
   -webkit-box-align: center;
@@ -341,6 +350,12 @@ img {
   padding: 8px 30px;
   margin-top: 10px;
   color: #2292A4;
+}
+
+.proBtn .btn {
+  background-color: #D96C06;
+  color: #BDBF09;
+  margin: 0 5px;
 }
 
 h1 {
@@ -480,22 +495,6 @@ nav a {
 .skills-title i:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.proBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.proBtn .btn {
-  background-color: #D96C06;
-  color: #BDBF09;
-  margin: 0 5px;
 }
 
 .projectsSection {

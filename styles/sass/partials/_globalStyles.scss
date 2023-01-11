@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 
+.proBtn {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     display: block;
     align-items: center;
@@ -14,4 +19,11 @@
     padding: 8px 30px;
     margin-top: 10px;
     color: variables.$primary;
+}
+
+
+.proBtn .btn {
+    background-color: variables.$tertiary;
+    color: variables.$secondary;
+    margin: 0 5px;
 }
