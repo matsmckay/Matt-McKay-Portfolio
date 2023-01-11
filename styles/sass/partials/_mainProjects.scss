@@ -14,6 +14,10 @@
 
 .project {
     width: 50%;
+
+    h3 {
+        text-align: center;
+    }
 }
 
 .projectOne {
@@ -38,6 +42,7 @@
     justify-content: space-evenly;
     padding-bottom: 30px;
     width: 50%;
+    align-items: center;
 }
 
 .projectTwoInfo {
@@ -46,6 +51,7 @@
     justify-content: space-evenly;
     padding-bottom: 30px;
     width: 50%;
+    align-items: center;
 }
 
 .projectThreeInfo {
@@ -54,6 +60,7 @@
     justify-content: space-evenly;
     padding-bottom: 30px;
     width: 50%;
+    align-items: center;
 }
 
 .projectFourInfo {
@@ -62,6 +69,7 @@
     justify-content: space-evenly;
     padding-bottom: 30px;
     width: 50%;
+    align-items: center;
 }
 
 .projectOneImage {

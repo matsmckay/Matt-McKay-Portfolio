@@ -512,6 +512,9 @@ nav a {
 .project {
   width: 50%;
 }
+.project h3 {
+  text-align: center;
+}
 
 .projectOne {
   display: -webkit-box;
@@ -550,6 +553,9 @@ nav a {
           justify-content: space-evenly;
   padding-bottom: 30px;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectTwoInfo {
@@ -565,6 +571,9 @@ nav a {
           justify-content: space-evenly;
   padding-bottom: 30px;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectThreeInfo {
@@ -580,6 +589,9 @@ nav a {
           justify-content: space-evenly;
   padding-bottom: 30px;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectFourInfo {
@@ -595,6 +607,9 @@ nav a {
           justify-content: space-evenly;
   padding-bottom: 30px;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectOneImage {
