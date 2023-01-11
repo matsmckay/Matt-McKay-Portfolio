@@ -501,11 +501,17 @@ nav a {
 .projectsSection {
   margin: 0 auto;
   background-color: #E7E8EE;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .projectsSection h2 {
   color: #0F0A0A;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.project {
+  width: 50%;
 }
 
 .projectOne {
@@ -526,6 +532,12 @@ nav a {
   display: flex;
 }
 
+.projectFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .projectOneInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,6 +550,7 @@ nav a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-bottom: 30px;
+  width: 50%;
 }
 
 .projectTwoInfo {
@@ -552,6 +565,7 @@ nav a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-bottom: 30px;
+  width: 50%;
 }
 
 .projectThreeInfo {
@@ -566,20 +580,37 @@ nav a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-bottom: 30px;
+  width: 50%;
+}
+
+.projectFourInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 30px;
+  width: 50%;
 }
 
 .projectOneImage {
-  width: 50%;
   padding-bottom: 20px;
 }
 
 .projectTwoImage {
-  width: 50%;
   padding-bottom: 20px;
 }
 
 .projectThreeImage {
-  width: 50%;
+  padding-bottom: 20px;
+}
+
+.projectFourImage {
   padding-bottom: 20px;
 }
 
@@ -604,6 +635,16 @@ nav a {
 }
 
 .projectThreeImage img {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90.5%;
+}
+
+.projectFourImage img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -703,10 +744,6 @@ footer {
   }
   .skills p {
     text-align: center;
-  }
-  .projectsSection h2 {
-    text-align: center;
-    padding-bottom: 15px;
   }
 }
 @media (max-width: 825px) {

@@ -3,11 +3,17 @@
 .projectsSection {
     margin: 0 auto;
     background-color: variables.$quartenary;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .projectsSection h2 {
-    color: variables.$smokeyBlack
+    color: variables.$smokeyBlack;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.project {
+    width: 50%;
 }
 
 .projectOne {
@@ -22,11 +28,16 @@
     display: flex;
 }
 
+.projectFour {
+    display: flex;
+}
+
 .projectOneInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 30px;
+    width: 50%;
 }
 
 .projectTwoInfo {
@@ -34,6 +45,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 30px;
+    width: 50%;
 }
 
 .projectThreeInfo {
@@ -41,23 +53,32 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 30px;
+    width: 50%;
+}
+
+.projectFourInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    width: 50%;
 }
 
 .projectOneImage {
-    width: 50%;
     padding-bottom: 20px;
 }
 
 .projectTwoImage {
-    width: 50%;
     padding-bottom: 20px;
 }
 
 .projectThreeImage {
-    width: 50%;
     padding-bottom: 20px;
 }
 
+.projectFourImage {
+    padding-bottom: 20px;
+}
 
 .projectOneImage img {
     justify-content: end;
@@ -72,6 +93,12 @@
 }
 
 .projectThreeImage img {
+    justify-content: end;
+    display: flex;
+    width: 90.5%;
+}
+
+.projectFourImage img {
     justify-content: end;
     display: flex;
     width: 90.5%;
